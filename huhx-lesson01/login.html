@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<link rel="stylesheet" href="css/lesson01-login.css">
+	<title>Login</title>
+</head>
+<body>
+	<div class="section">
+		<div class="all">
+			<div class="nav">
+				<a class="login on">普通登陆</a>
+				<a class="login">二维码登陆</a>
+			</div>
+			<div class="contentbox">
+				<div class="box active">
+					<div class="cont-1">
+						<input class="icon email" name="txt" type="text" placeholder="邮箱">
+						<input class="icon password" name="psd" type="password" placeholder="密码">
+						<div class="verify">
+							>>>请依次点击"敏"，"享"，"昔"完成验证>>>
+						</div>
+						<button class="btn">登&nbsp;&nbsp;陆</button>
+						<div class="about"><a href="#">忘记密码?&nbsp;&nbsp;<span></span>&nbsp;&nbsp;注册&nbsp;&nbsp;<span></span>&nbsp;&nbsp;关于网易邮箱帐号</a></div>
+					</div>
+				</div>
+				<div class="box">
+					<div class="cont-2">
+						<span class="text">使用&nbsp;<a href="#">网易帐号管家</a>&nbsp;或&nbsp;<a href="#">邮箱大师</a>&nbsp;扫一扫快速登陆</span>
+						<img src="img/img2_01.png" width="190" height="190">
+						<div class="about"><a href="#">忘记密码?&nbsp;&nbsp;<span></span>&nbsp;&nbsp;注册&nbsp;&nbsp;<span></span>&nbsp;&nbsp;关于网易邮箱帐号</a></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script>
+		$().ready(function(){
+			$(function(){
+				$(".nav a").off("click").on("click",function(){
+					var index = $(this).index();
+					$(this).addClass("on").siblings().removeClass("on");
+					$(".contentbox .box").eq(index).addClass("active").siblings().removeClass("active");
+				});
+			});
+		})
+	</script>
+	<!--[if lte IE 9]>
+     <script src="https://cdn.bootcss.com/jquery-placeholder/2.3.1/jquery.placeholder.min.js"></script>
+     <script>
+        $(function(){
+            $('input[placeholder]').placeholder();
+            $('.password').css({"margin-top":"17px"})
+        });
+     </script>
+    <![endif]-->
+</body>
+</html>

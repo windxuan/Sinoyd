@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>huhx/lesoon03</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      html, body {
+        height: 100%;
+        overflow: hidden;
+      }
+      #container, .sections, .section {
+        height: 100%;
+        position: relative;
+      }
+      .section {
+        background-size: contain;
+        background-position: 50% 50%;
+        background-repeat: no-repeat;
+      }
+      #section0 {
+        background-image: url(static/img/img-1.jpg);
+      }
+      #section1 {
+        background-image: url(static/img/img-2.jpg);
+      }
+      #section2 {
+        background-image: url(static/img/img-3.jpg);
+      }
+      #section3 {
+        background-image: url(static/img/img-4.jpg);
+      }
+
+      .pages {
+        position: fixed;
+        list-style: none;
+      }
+      .vertical.pages {
+        right: 10px;
+        top: 50%;
+      }
+      .horizontal.pages {
+        left: 50%;
+        bottom: 10px;
+      }
+      .pages li {
+        width: 15px;
+        height: 15px;
+        border-radius: 50%;
+        background: #ccc;
+        margin: 15px 10px;
+        cursor: pointer;
+      }
+      .horizontal.pages li {
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .pages li.active {
+        width: 15px;
+        height: 15px;
+        background: #09acf7;
+        margin: 15px 10px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="container" data-PageSwitch>
+      <div class="sections">
+        <div class="section active" id="section0"></div>
+        <div class="section" id="section1"></div>
+        <div class="section" id="section2"></div>
+        <div class="section" id="section3"></div>
+      </div>
+    </div>
+    <script src="lib/jquery-1.11.3.min.js"></script>
+    <script src="static/js/PageSwitch.js"></script>
+
+    <!--可配置插件参数-->
+    <script type="text/javascript">
+      $("#container").PageSwitch({
+        index: 0,                   //页面开始的索引
+        duration: 1000,             //动画执行时间
+        loop: true,                //是否循环切换
+        pagination: true,           //是否进行分页
+        keyboard: true,             //是否触发键盘事件
+        direction: "horizontal",    //滑动方向vertical,horizontal
+      });
+    </script>
+  </body>
+</html>

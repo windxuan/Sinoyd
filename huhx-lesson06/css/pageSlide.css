@@ -1,0 +1,80 @@
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+[data-PageSlide] {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+[data-PageSlide]:hover .btn {
+  opacity: 1;
+}
+[data-PageSlide] .items {
+  position: relative;
+  height: inherit;
+}
+[data-PageSlide] .item {
+  float: left;
+  height: inherit;
+  background-size: cover;
+  /* IE8下为拉伸填充 */
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-image: none\9;
+  /* IE9及以下取消背景图，使用 filter 方式引入背景图 */
+}
+@media (min-width: 768px) {
+}
+[data-PageSlide] :root .item {
+  filter: none;
+  /* 解决IE9 filter 生效问题 */
+}
+[data-PageSlide] .item1 {
+  background-image: url("../images/img-1.jpg");
+}
+[data-PageSlide] .item2 {
+  background-image: url("../images/img-2.jpg");
+}
+[data-PageSlide] .item3 {
+  background-image: url("../images/img-3.jpg");
+}
+[data-PageSlide] .item4 {
+  background-image: url("../images/img-4.jpg");
+}
+[data-PageSlide] .pages {
+  position: absolute;
+  width: 100%;
+  bottom: 1.25rem;
+  z-index: 10;
+  text-align: center;
+}
+[data-PageSlide] .pages > span {
+  display: inline-block;
+  margin: 0 7px;
+  width: 50px;
+  height: 5px;
+  background: #ccc;
+  cursor: pointer;
+}
+[data-PageSlide] .pages > span.on {
+  background: #de6b2c;
+}
+[data-PageSlide] .btn {
+  position: absolute;
+  top: 40%;
+  padding: 10px;
+  text-align: center;
+  color: #fff;
+  background: #de6b2c;
+  cursor: pointer;
+  opacity: 0;
+}
+[data-PageSlide] .btn.L {
+  left: 0;
+}
+[data-PageSlide] .btn.R {
+  right: 0;
+}

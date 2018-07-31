@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>lesson06</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<!--设置缩放和绘制-->
+	<meta name="viewport" content="width=device-width, initial-scale=1,minmum-scale=1,maxmum-scale=1,user-scalable=no">
+	<!--加载meta IE兼容文件-->
+	<!--[if lt IE 9]>
+	<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+	<![endif]-->
+	<!-- 轮播图插件 -->
+	<link rel="stylesheet" href="./css/pageSlide.css">
+
+	<!-- 3D旋转木马轮播 -->
+	<link rel="stylesheet" href="css/carousel.css">
+
+	<!-- 主样式 -->
+	<link rel="stylesheet" href="./css/master.css">
+</head>
+<body>
+	<!-- 导航栏 -->
+	<div class="nav">
+		<!-- logo -->
+		<div class="nav-logo">
+			<i>
+			  <span class="logo-1">MODUS</span>
+			  <span class="logo-2">versus</span>
+			</i>
+		</div>
+		<!-- nav-列表 -->
+		<div class="nav-bar">
+			<ul>
+				<li class="hover-shadow"><a href="javascript:void(0)">HOME</a></li>
+				<li class="hover-shadow">
+				  <a href="javascript:void(0)">ABOUT</a>
+				  	<ul class="bubble-top">
+					  <li><a href="javascript:void(0)">Portfoli&nbsp;1&nbsp;column&nbsp;page</a></li>
+					  <li><a href="javascript:void(0)">Portfoli&nbsp;2&nbsp;column&nbsp;page</a></li>
+					  <li><a href="javascript:void(0)">Portfoli&nbsp;3&nbsp;column&nbsp;page</a></li>
+					</ul>
+				</li>
+				<li class="hover-shadow">
+				  <a href="javascript:void(0)">SERVICES</a>
+				</li>
+				<li class="hover-shadow">
+				  <a href="javascript:void(0)">PORTFOLIO</a>
+				  <ul class="bubble-top forth">
+				  	<li><a href="javascript:void(0)">Portfoli&nbsp;1&nbsp;column&nbsp;page</a></li>
+				  	<li><a href="javascript:void(0)">Portfoli&nbsp;2&nbsp;column&nbsp;page</a></li>
+				  	<li><a href="javascript:void(0)">Portfoli&nbsp;3&nbsp;column&nbsp;page</a></li>
+				  	<li><a href="javascript:void(0)">Portfoli&nbsp;4&nbsp;column&nbsp;page</a></li>
+				  </ul>
+				</li>
+				<li class="hover-shadow">
+				  <a href="javascript:void(0)">BLOG</a>
+				  <ul class="bubble-top">
+				  	<li><a href="javascript:void(0)">Portfoli&nbsp;1&nbsp;column&nbsp;page</a></li>
+				  	<li><a href="javascript:void(0)">Portfoli&nbsp;2&nbsp;column&nbsp;page</a></li>
+				  	<li><a href="javascript:void(0)">Portfoli&nbsp;3&nbsp;column&nbsp;page</a></li>
+				  </ul>
+				</li>
+				<li class="hover-shadow">
+				  <a href="javascript:void(0)">FEATURES</a>
+				  <ul class="bubble-top active">
+				  	<li><a href="javascript:void(0)">Portfoli&nbsp;1&nbsp;column&nbsp;page</a></li>
+				  	<li><a href="javascript:void(0)">Portfoli&nbsp;2&nbsp;column&nbsp;page</a></li>
+				  </ul>
+				</li>
+				<li class="hover-shadow">
+				  <a href="javascript:void(0)">CONTACTS</a>
+				</li>
+				<li><i class="logo-search fa fa-search"></i></li>
+			</ul>
+		</div>
+	</div>
+	<!-- 轮播图:封装插件 -->
+	<div class="carousel" style="height: 32rem;">
+	<!-- 轮播图插件内容 -->
+	    <div data-PageSlide>
+	        <div class="items">
+	            <div class="item item1"></div>
+	            <div class="item item2"></div>
+	            <div class="item item3"></div>
+	            <div class="item item4"></div>
+	        </div>
+	        <div class="pages"></div>
+
+	        <!-- 轮播字体 -->
+	        <div class="carousel-txt">
+	        	<span>VESTIBULUM</span>
+	        </div>
+	    </div>
+	</div>
+	<!-- content-1 -->
+	<div class="content">
+		<!-- cont-one -->
+		<div class="cont-one">
+			<div class="content-txt">
+				<span>Some&nbsp;of&nbsp;our&nbsp;top&nbsp;services</span>
+				<p>Ut&nbsp;eleifend&nbsp;libero&nbsp;sed&nbsp;neque&nbsp;rhoncus&nbsp;consequat.Maecenas&nbsp;tincidunt,augue&nbsp;et&nbsp;rutrum&nbsp;condmentum,libero&nbsp;lectus&nbsp;mattis&nbsp;orci,ut&nbsp;commodo.</p>
+			</div>
+
+			<div class="content-btn">
+				<i><a href="javascript:void(0)">VIEW&nbsp;MORE</a></i>
+			</div>
+		</div>
+		<!-- cont-two -->
+		<div class="cont-two">
+			<div class="panel one">
+			  <i></i>
+			  <p class="p1">SUSPENDISSE</p>
+			  <p class="p2">Quisque&nbsp;id&nbsp;tellus&nbsp;quis&nbsp;risus&nbsp;vehicula&nbsp;vehicula&nbsp;ut&nbsp;turpis.In&nbsp;eros&nbsp;nulla,placerat&nbsp;vitae&nbsp;at,vehicula&nbsp;ut&nbsp;nunc.</p>
+			  <span class="btn info"><a href="javascript:void(0)">read&nbsp;more</a></span>
+			</div>
+			<div class="panel lf two">
+			  <i></i>
+			  <p class="p1">MAECENAS</p>
+			  <p class="p2">Ut&nbsp;eleifend&nbsp;libero&nbsp;sed&nbsp;neque&nbsp;rhoncus&nbsp;consequat.Maecenas&nbsp;tincidunt,augue&nbsp;et&nbsp;rutrum&nbsp;condmentum,libero&nbsp;lectus&nbsp;mattis&nbsp;orci,ut&nbsp;commodo.</p>
+			  <span class="btn success"><a href="javascript:void(0)">read&nbsp;more</a></span>
+			</div>
+			<div class="panel lf three">
+			  <i></i>
+			  <p class="p1">ALIQUAM</p>
+			  <p class="p2">Vivamus&nbsp;eget&nbsp;ante&nbsp;bibendum&nbsp;arcuvehicula&nbsp;ultricies.Integer&nbsp;venenatis&nbsp;mattis&nbsp;nisl,vitae&nbsp;pulvinar&nbsp;dui&nbsp;tempornon.</p>
+			  <span class="btn success"><a href="javascript:void(0)">read&nbsp;more</a></span>
+			</div>
+			<div class="panel lf four">
+			  <i></i>
+			  <p class="p1">HABITASSE</p>
+			  <p class="p2">Astehicula&nbsp;ultricies.Integer&nbsp;venenatis&nbsp;mattis&nbsp;nisl,vitae&nbsp;pulvinar&nbsp;dui&nbsp;tempornon.</p>
+			  <span class="btn success"><a href="javascript:void(0)">read&nbsp;more</a></span>
+			</div>
+		</div>
+	</div>
+	<!-- content-2 -->
+	<div class="rotate">
+		<!-- rot-one -->
+		<div class="rot-one">
+			<span>WHY&nbsp;MODUS&nbsp;VERSUS?</span>
+			<p>Capacitance&nbsp;cascading&nbsp;integer&nbsp;reflective&nbsp;interface&nbsp;data&nbsp;development&nbsp;high&nbsp;bus&nbsp;cache&nbsp;dithering&nbsp;transponder.</p>
+		</div>
+		<!-- rot-two -->
+		<div class="rot-two">
+		  <article>
+			<div class = "caroursel poster-main" data-setting = '{
+		        "width":1000,
+		        "height":320,
+		        "posterWidth":640,
+		        "posterHeight":270,
+		        "scale":0.8,
+		        "dealy":"2000",
+		        "algin":"middle"
+		    }'>
+		        <ul class = "poster-list">
+		            <li class = "poster-item">
+		            	<i class="post-i-frist"></i>
+		            	<i class="post-i-second"></i>
+		            	<i class="post-i-thrid"></i>
+		            	<i class="post-i-forth"></i>
+		            	<img src="./images/cont_pic_03.png" width = "100%" height="100%">
+		            </li>
+		            <li class = "poster-item">
+		            	<i class="post-i-frist"></i>
+		            	<i class="post-i-second"></i>
+		            	<i class="post-i-thrid"></i>
+		            	<i class="post-i-forth"></i>
+		            	<img src="./images/cont_pic_03.png" width = "100%" height="100%">
+		            </li>
+		            <li class = "poster-item">
+		            	<i class="post-i-frist"></i>
+		            	<i class="post-i-second"></i>
+		            	<i class="post-i-thrid"></i>
+		            	<i class="post-i-forth"></i>
+		            	<img src="./images/cont_pic_03.png" width = "100%" height="100%">
+		            </li>
+		            <li class = "poster-item">
+		            	<i class="post-i-frist"></i>
+		            	<i class="post-i-second"></i>
+		            	<i class="post-i-thrid"></i>
+		            	<i class="post-i-forth"></i>
+		            	<img src="./images/cont_pic_03.png" width = "100%" height="100%">
+		            </li>
+		            <li class = "poster-item">
+		            	<i class="post-i-frist"></i>
+		            	<i class="post-i-second"></i>
+		            	<i class="post-i-thrid"></i>
+		            	<i class="post-i-forth"></i>
+		            	<img src="./images/cont_pic_03.png" width = "100%" height="100%">
+		            </li>
+		            <li class = "poster-item">
+		            	<i class="post-i-frist"></i>
+		            	<i class="post-i-second"></i>
+		            	<i class="post-i-thrid"></i>
+		            	<i class="post-i-forth"></i>
+		            	<img src="./images/cont_pic_03.png"  width = "100%" height="100%">
+		            </li>
+		            <li class = "poster-item">
+		            	<i class="post-i-frist"></i>
+		            	<i class="post-i-second"></i>
+		            	<i class="post-i-thrid"></i>
+		            	<i class="post-i-forth"></i>
+		            	<img src="./images/cont_pic_03.png"  width = "100%" height="100%">
+		            </li>
+		        </ul>
+
+		        <div class = "poster-btn poster-prev-btn"></div>
+		        <div class = "poster-btn poster-next-btn"></div>
+		    </div>
+		  </article>
+		</div>
+	</div>
+	<!-- content-3 -->
+	<div class="page">
+		<!-- page-one -->
+		<div class="page-one">
+			<!-- page-1 -->
+			<div class="page-txt-one">
+			  <p>Why&nbsp;Choose&nbsp;Us&nbsp;?</p>
+			  <ul>
+			  	<li class="fa fa-icoright">Quisque&nbsp;at&nbsp;massa&nbsp;ipsum</li>
+			  	<li class="fa fa-icoright">Maecenas&nbsp;a&nbsp;lorem&nbsp;augue,egestas</li>
+			  	<li class="fa fa-icoright">Cras&nbsp;vitae&nbsp;felis&nbsp;at&nbsp;lacus&nbsp;eleifend</li>
+			  	<li class="fa fa-icoright">Etiam&nbsp;auctor&nbsp;diam&nbsp;pellentesque</li>
+			  	<li class="fa fa-icoright">Nulla&nbsp;ac&nbsp;massa&nbsp;at&nbsp;dolor</li>
+			  	<li class="fa fa-icoright">Condimentum&nbsp;eleifend&nbsp;vitae&nbsp;vitae</li>
+			  </ul>
+			</div>
+			<!-- page-2 -->
+			<div class="page-txt-two">
+			  <!-- top -->
+			  <div class="page-wo-on">
+			  	Curabitur&nbsp;quis&nbsp;nisl&nbsp;in&nbsp;leo&nbsp;euismod&nbsp;venenatis&nbsp;in&nbsp;diam.Etiam&nbsp;auctor&nbsp;diam&nbsp;tesque&nbsp;<a href="javascript:void(0)">vehicula&nbsp;mattis.</a>Nulla&nbsp;massa&nbsp;at&nbsp;dolor&nbsp;condimentum&nbsp;eleifend&nbsp;vitae&nbsp;vitae&nbsp;urna.
+			  </div>
+			  <!-- down -->
+			  <div class="page-wo-down">
+				<div class="page-down-one">
+					<i></i>
+					<span>SUSPENDISSE</span>
+				</div>
+				<div class="page-down-two">
+					<i></i>
+					<span>MAECENAS</span>
+				</div>
+				<div class="page-down-three">
+					<i></i>
+					<span>ALIQUAM</span>
+				</div>
+				<div class="page-down-four">
+					<i></i>
+					<span>HABITASSE</span>
+				</div>
+			  </div>
+			</div>
+			<!-- page-3 -->
+			<div class="page-txt-thrid">
+			  <p>What&nbsp;Client's&nbsp;Say&nbsp;?</p>
+			  <span>Curabitur&nbsp;quis&nbsp;nisl&nbsp;in&nbsp;leo&nbsp;euismod&nbsp;venenatis&nbsp;eu&nbsp;in&nbsp;diam.&nbsp;Etiam&nbsp;auctor&nbsp;diam&nbsp;pellentesque&nbsp;lectus&nbsp;vehicula&nbsp;mattis.&nbsp;Nulla&nbsp;ac&nbsp;massa&nbsp;at&nbsp;color&nbsp;condimentum</span>
+			  <i>Jhon&nbsp;Doe</i>
+			</div>
+			<!-- page-4 -->
+			<div class="page-txt-forth">
+			  <div class="page-forth-rl">Our&nbsp;Haapy&nbsp;Clients</div>
+			  <div class="page-forth-mid">
+			  	<i></i>
+			    <p></p>
+			  </div>
+			  <div class="page-forth-lf">
+			  	<i><</i>
+			    <i>></i>
+			  </div>
+
+			</div>
+		</div>
+		<!-- page-two -->
+		<div class="page-two">
+			<div>
+				<img src="./images/foot-pic_03.png" alt="">
+			</div>
+			<div class="opt"><img src="./images/foot-pic_03.png" alt=""></div>
+			<div class="opt"><img src="./images/foot-pic_03.png" alt=""></div>
+			<div class="opt"><img src="./images/foot-pic_03.png" alt=""></div>
+			<div class="opt"><img src="./images/foot-pic_03.png" alt=""></div>
+			<div class="opt"><img src="./images/foot-pic_03.png" alt=""></div>
+		</div>
+	</div>
+	<!-- footer -->
+	<div class="footer">
+		<!-- foot-one -->
+		<div class="foot-one">
+			<!-- 尾栏列表 -->
+			<i></i>
+			<div class="foot-details">
+				<!-- foot.nav-one -->
+			  <div class="details-one">
+			  	<div class="logo-foot">
+				  <span class="logo-1">MODUS</span>
+			      <span class="logo-2">versus</span>
+			  	</div>
+				<div class="details-onetxt">
+					Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet&nbsp;consectetur&nbsp;adipiscing&nbsp;elit.Nam&nbsp;viverra&nbsp;euismod&nbsp;odio,gravida&nbsp;pellentesque&nbsp;urna&nbsp;varius&nbsp;vitae.&nbsp;Sed&nbsp;dui&nbsp;lorem,adipiscing&nbsp;et,interdum&nbsp;nec.
+				</div>
+				<div class="details-information">
+					Phone:&nbsp;&nbsp;&nbsp;<i>182&nbsp;2569&nbsp;5896</i>
+					<br>
+					<br>
+					e-mail:&nbsp;&nbsp;&nbsp;<i>info@modu.versus</i>
+				</div>
+			  </div>
+			  <!-- foot.nav-two -->
+			  <div class="details-two">
+			  	<i>Company</i>
+			  	<ul>
+			  		<li class="fa fa-right">&nbsp;<a href="javascript:void(0)">About</a></li>
+			  		<li class="fa fa-right">&nbsp;<a href="javascript:void(0)">FAQ</a></li>
+			  		<li class="fa fa-right">&nbsp;<a href="javascript:void(0)">Contact</a></li>
+			  		<li class="fa fa-right">&nbsp;<a href="javascript:void(0)">Terms</a></li>
+			  		<li class="fa fa-right">&nbsp;<a href="javascript:void(0)">Privacy</a></li>
+			  		<li class="fa fa-right">&nbsp;<a href="javascript:void(0)">Testimonials</a></li>
+			  	</ul>
+			  </div>
+			  <!-- foot.nav-three -->
+			  <div class="details-three">
+			  	<i>Community</i>
+			  	<ul>
+			  		<li class="fa fa-right">&nbsp;<a href="javascript:void(0)">Blog</a></li>
+			  		<li class="fa fa-right">&nbsp;<a href="javascript:void(0)">Forum</a></li>
+			  		<li class="fa fa-right">&nbsp;<a href="javascript:void(0)">Support</a></li>
+			  		<li class="fa fa-right">&nbsp;<a href="javascript:void(0)">Newsletter</a></li>
+			  	</ul>
+			  </div>
+			  <!-- foot.nav-four -->
+			  <div class="details-four">
+			  	<div class="details-four-txt">
+			  		from&nbsp;the&nbsp;&nbsp;<i>BLOG</i>
+			  	</div>
+			  	<div class="details-fourpic one">
+			  		<i></i>
+			  		<p>Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet,consecterur&nbsp;adipiscing&nbsp;elit</p>
+			  		<span>26&nbsp;May,2013</span>
+			  	</div>
+			  	<div class="details-fourpic two">
+			  		<i></i>
+			  		<p>Lorem&nbsp;ipsum&nbsp;dolor&nbsp;sit&nbsp;amet,consecterur&nbsp;adipiscing&nbsp;elit</p>
+			  		<span>26&nbsp;May,2013</span>
+			  	</div>
+			  </div>
+			</div>
+		</div>
+		<!-- foot-two -->
+		<div class="foot-two">
+			<!-- 尾栏 -->
+			<span class="toot-timer">
+				2013&nbsp;&nbsp;ModusVersus
+			</span>
+			<ul class="foot-two-logo">
+				<li class="fa fa-facebook"></li>
+				<li class="fa fa-google"></li>
+				<li class="fa fa-github"></li>
+				<li class="fa fa-wifi"></li>
+			</ul>
+		</div>
+	</div>
+
+	<script src="./js/jquery.min.js"></script>
+	<script src="./js/jquery.pageSlide.js"></script>
+	<!-- 3D旋转轮播 -->
+	<script src="./js/jquery.carousel.js"></script>
+	<script>
+		Caroursel.init($('.caroursel'))
+	</script>
+</body>
+</html>

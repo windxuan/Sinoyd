@@ -1,0 +1,94 @@
+@charset "utf-8";
+/*导航栏*/
+.menu,
+.menu ul,
+.menu ul li{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  position: relative;
+  box-sizing: border-box;
+}
+.menu:after,
+.menu > ul:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+.menu {
+  width: auto;
+  line-height: 1;
+  background: #f56c6c;
+}
+.menu > ul > li{
+  float: left;
+  padding: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #eee;
+  transition: color .2s ease;
+  border:1px solid #f56c6c;
+}
+.menu > ul > li:hover {
+  color: #f56c6c;
+  background: #409eff;
+}
+.menu ul ul {
+  position: absolute;
+  left: -9999px;
+}
+.menu > ul > li > span {
+  width: 140px;
+  height: 50px;
+  display: block;
+  line-height: 50px;
+  text-align: center;
+}
+.menu li:hover > ul {
+  left: auto;
+  padding: 0px 0px;
+}
+.menu ul ul ul {
+  margin-top: -0%;
+  margin-left: 99%;
+  top: 0;
+}
+.menu ul li ul.menu-link-ul li {
+  height: 0;
+  transition: height .2s ease;
+}
+.menu ul li:hover > ul > li {
+  height: 52px;
+}
+.menu ul ul li {
+  margin: 0px;
+  padding: 1px;
+  width: 140px;
+  text-align: center;
+  line-height: 55px;
+  background: #f56c6c;
+  text-decoration: none;
+  color: #eee;
+  transition: color .2s ease;
+}
+.menu ul ul li:hover {
+  color: #f56c6c;
+  background: #409eff;
+}
+.menu ul ul.menu-link-ul::after {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 4px;
+  height: 4px;
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+  content: "";
+  transform: rotate(45deg);
+  transition: border-color 0.2s ease;
+}

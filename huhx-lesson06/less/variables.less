@@ -1,0 +1,93 @@
+//- 设备尺寸
+@xs: 480px;
+@sm: 768px;
+@md: 992px;
+@lg: 1200px;
+
+// 容器名
+@container: ~"container";
+// 行名
+@row: ~"row";
+// 列名
+@col: ~"col";
+
+// 栅格总数
+@col-sum: 12;
+// 列边距
+@col-padding: 15px;
+
+//- 栅格布局 Start
+.@{container},
+.@{container}-fluid {
+    margin: 0 auto;
+    padding-left: @col-padding;
+    padding-right: @col-padding;
+    min-width: 0;
+    box-sizing: border-box;
+}
+.@{container}-fluid {
+    width: 100%;
+}
+.@{container}{
+	@media all and (min-width: @xs) {
+        width: (@xs);
+    }
+    @media all and (min-width: @sm) {
+        width: (@sm);
+    }
+    @media all and (min-width: @md) {
+        width: (@md);
+    }
+    @media all and (min-width: @lg) {
+        width: (@lg);
+    }
+}
+
+.@{row} {
+    margin-left: -@col-padding;
+    margin-right: -@col-padding;
+    min-height: 1px;
+    &::after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}
+
+// 循环生成列
+.col(@col-sum, xs, @col-sum);
+
+.col(@index, @s, @num) when (@index > 0) {
+    .col(@index - 1, @s, @num);
+    .col-@{s}-@{index} {
+        float: left;
+        width: 100% / @num * @index;
+        box-sizing: border-box;
+    }
+}
+
+// 媒体查询设置对应列类型css
+@media all and (max-width: @xs) {
+    .col(@col-sum, xs, @col-sum);
+    .sm-hide {
+        display: none;
+    }
+}
+@media all and (min-width: @sm) {
+    .col(@col-sum, sm, @col-sum);
+    .sm-hide {
+        display: none;
+    }
+}
+@media all and (min-width: @md) {
+    .col(@col-sum, md, @col-sum);
+    .md-hide {
+        display: none;
+    }
+}
+@media all and (min-width: @lg) {
+    .col(@col-sum, lg, @col-sum);
+    .lg-hide {
+        display: none;
+    }
+}
